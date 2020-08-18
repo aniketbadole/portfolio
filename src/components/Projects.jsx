@@ -5,7 +5,6 @@ const baseURL = "https://gitconnected.com/v1/portfolio/aniketbadole";
 
 const getProfile = () => {
   return axios.get(baseURL).then(({ data }) => {
-    console.log(data);
     return data;
   });
 };
