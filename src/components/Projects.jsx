@@ -34,6 +34,42 @@ class Projects extends Component {
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 3,
       },
+      {
+        name: "Cyknowsure Technologies",
+        description: "Web portal for a digital marketing agency.",
+        url: "https://cyknowsure.com",
+        github: "https://github.com/aniketbadole/fe-nc-news",
+        image: thumb,
+        tech: ["React", "Express.JS", "PostgreSQL"],
+        id: 4,
+      },
+      {
+        name: "Hangman",
+        description: "A hangman game based on React",
+        url: "https://ncreddit.netlify.app",
+        github: "https://github.com/aniketbadole/fe-nc-news",
+        image: thumb,
+        tech: ["React", "Express.JS", "PostgreSQL"],
+        id: 5,
+      },
+      {
+        name: "Hobbiton Tours",
+        description: "Graphic Design for New Zealand based Hobbiton Tours",
+        url: "https://ncreddit.netlify.app",
+        github: "https://github.com/aniketbadole/fe-nc-news",
+        image: thumb,
+        tech: ["React", "Express.JS", "PostgreSQL"],
+        id: 6,
+      },
+      {
+        name: "Kaitaki Adventures",
+        description: "Graphic design for New Zealand based Kaitaki Adventures",
+        url: "https://ncreddit.netlify.app",
+        github: "https://github.com/aniketbadole/fe-nc-news",
+        image: thumb,
+        tech: ["React", "Express.JS", "PostgreSQL"],
+        id: 7,
+      },
     ],
   };
   render() {
@@ -46,27 +82,21 @@ class Projects extends Component {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
             nobis optio eligendi quibusdam odio
           </p>
-
+        </div>
+        <div className="grid">
           {projects.map((eachProject) => {
             return (
-              <div className="card" key={eachProject.id}>
-                <img src={eachProject.image} alt="" />
+              <div
+                className="card"
+                key={eachProject.id}
+                style={{ backgroundImage: `url(${eachProject.image})` }}
+              >
+                {/* <img src={eachProject.image} alt="" /> */}
                 <h4>{eachProject.name}</h4>
-                <p>
-                  Votes: {eachProject.github} Comments: {eachProject.url}
-                </p>
                 <p>{eachProject.description}</p>
               </div>
             );
           })}
-          {/* 
-          <img src={projects.image} alt="" />
-          <p>{projects.name}</p>
-          <p>{projects.description}</p>
-          <p>
-            {projects.url}, {projects.github}
-          </p>
-          <span>{projects.tech}</span> */}
         </div>
       </div>
     );
