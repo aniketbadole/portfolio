@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <p className="left">
-        Copyright &copy; {year.getFullYear()} Aniket Badole. Made with React
+        Copyright &copy; {year.getFullYear()} Aniket Badole.
       </p>
 
       <div className="right">

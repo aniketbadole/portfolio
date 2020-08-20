@@ -15,7 +15,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 1,
-        type: "web app",
+        type: "web-app",
       },
       {
         name: "Cabbed",
@@ -25,7 +25,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 2,
-        type: "mobile app",
+        type: "mobile-app",
       },
       {
         name: "GBIS",
@@ -36,7 +36,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 3,
-        type: "web app",
+        type: "web-app",
       },
       {
         name: "Cyknowsure Technologies",
@@ -46,7 +46,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 4,
-        type: "web app",
+        type: "web-app",
       },
       {
         name: "Hangman",
@@ -66,7 +66,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 6,
-        type: "graphic design",
+        type: "graphic-design",
       },
       {
         name: "Kaitaki Adventures",
@@ -81,7 +81,6 @@ class Projects extends Component {
     ],
   };
   render() {
-    const { projects } = this.state;
     return (
       <div className="project-page">
         <div className="container">
@@ -90,7 +89,23 @@ class Projects extends Component {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
             nobis optio eligendi quibusdam odio
           </p>
+          {/* <button name="all" onClick={this.handleClick}>
+            All
+          </button>
+          <button name="web-apps" onClick={this.handleClick}>
+            Web Apps
+          </button>
+          <button name="mobile-apps" onClick={this.handleClick}>
+            Mobile Apps
+          </button>
+          <button name="games" onClick={this.handleClick}>
+            Games
+          </button>
+          <button name="graphic-design" onClick={this.handleClick}>
+            Graphic Design
+          </button> */}
         </div>
+
         <ProjectList projects={this.state.projects} />
         {/* <div className="grid">
           {projects.map((eachProject) => {
@@ -109,6 +124,11 @@ class Projects extends Component {
       </div>
     );
   }
+
+  handleClick = (event) => {
+    console.log(event.target.name);
+    this.state.projects.filter((item) => item.type === event.target.name);
+  };
 
   componentDidMount() {
     api.getProfile().then((data) => {

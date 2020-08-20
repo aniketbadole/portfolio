@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <a href="http://aniketbadole.com" id="logo">
-        <img src={logo} alt="aniketbadole" srcset="" />
+        <img src={logo} alt="aniketbadole" />
       </a>
 
       <ul>
