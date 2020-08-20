@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import * as api from "../api";
+import ProjectList from "./ProjectList";
 import thumb from "../assets/thumbnail.jpg";
 
 class Projects extends Component {
@@ -14,6 +15,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 1,
+        type: "web app",
       },
       {
         name: "Cabbed",
@@ -23,6 +25,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 2,
+        type: "mobile app",
       },
       {
         name: "GBIS",
@@ -33,6 +36,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 3,
+        type: "web app",
       },
       {
         name: "Cyknowsure Technologies",
@@ -42,6 +46,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 4,
+        type: "web app",
       },
       {
         name: "Hangman",
@@ -51,6 +56,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 5,
+        type: "game",
       },
       {
         name: "Hobbiton Tours",
@@ -60,6 +66,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 6,
+        type: "graphic design",
       },
       {
         name: "Kaitaki Adventures",
@@ -69,6 +76,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 7,
+        type: "graphic design",
       },
     ],
   };
@@ -83,7 +91,8 @@ class Projects extends Component {
             nobis optio eligendi quibusdam odio
           </p>
         </div>
-        <div className="grid">
+        <ProjectList projects={this.state.projects} />
+        {/* <div className="grid">
           {projects.map((eachProject) => {
             return (
               <div
@@ -91,13 +100,12 @@ class Projects extends Component {
                 key={eachProject.id}
                 style={{ backgroundImage: `url(${eachProject.image})` }}
               >
-                {/* <img src={eachProject.image} alt="" /> */}
                 <h4>{eachProject.name}</h4>
                 <p>{eachProject.description}</p>
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     );
   }
