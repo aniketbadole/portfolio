@@ -15,7 +15,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 1,
-        type: "web-app",
+        type: ["web-app", "all"],
       },
       {
         name: "Cabbed",
@@ -25,7 +25,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 2,
-        type: "mobile-app",
+        type: ["mobile-app", "all"],
       },
       {
         name: "GBIS",
@@ -36,7 +36,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 3,
-        type: "web-app",
+        type: ["web-app", "all"],
       },
       {
         name: "Cyknowsure Technologies",
@@ -46,7 +46,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 4,
-        type: "web-app",
+        type: ["web-app", "all"],
       },
       {
         name: "Hangman",
@@ -56,7 +56,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 5,
-        type: "game",
+        type: ["game", "all"],
       },
       {
         name: "Hobbiton Tours",
@@ -66,7 +66,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 6,
-        type: "graphic-design",
+        type: ["graphic-design", "all"],
       },
       {
         name: "Kaitaki Adventures",
@@ -76,7 +76,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 7,
-        type: "graphic design",
+        type: ["graphic design", "all"],
       },
     ],
   };
