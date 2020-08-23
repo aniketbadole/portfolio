@@ -179,3 +179,22 @@ footer {
   background-color: #fff;
   color: #444;
 }
+
+#svg {
+  /* width: 220px;
+  height: 300px;
+  border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.single-svg {
+  width: 80px;
+  flex: 1;
+  padding: 1.1em;
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
