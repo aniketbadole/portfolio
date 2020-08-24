@@ -18,7 +18,7 @@ class Contact extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("YOur message has been sent!"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -35,6 +35,7 @@ class Contact extends React.Component {
           <h1>Contact</h1>
           <p>Have a project in mind? Leave me a message!</p>
           <form onSubmit={this.handleSubmit}>
+            <input type="hidden" name="form-name" value="contact" />
             <p>
               <label>
                 Your Name:
