@@ -38,7 +38,7 @@ class Contact extends React.Component {
             <input type="hidden" name="form-name" value="contact" />
             <p>
               <label>
-                Your Name:
+                Name:
                 <input
                   type="text"
                   name="name"
@@ -49,7 +49,7 @@ class Contact extends React.Component {
             </p>
             <p>
               <label>
-                Your Email:
+                Email:
                 <input
                   type="email"
                   name="email"

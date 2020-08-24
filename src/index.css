@@ -199,8 +199,7 @@ footer {
   width: 0;
 }
 
-/* Some CSS
-Important */
+/* Form */
 
 form {
   margin-right: auto;
@@ -221,7 +220,7 @@ fieldset {
 label {
   margin-bottom: 8px;
   display: block;
-  color: #2b2e4a;
+  color: #00aef0;
 }
 
 input:not([type="checkbox"]):not([type="radio"]),
@@ -235,10 +234,7 @@ textarea {
   border-left: 0;
   transition: border-bottom-color 0.15s ease-in;
 
-  &:focus {
-    outline: 0;
-    border-bottom-color: #3fc1c9;
-  }
+  border-bottom-color: #00aef0;
 }
 
 input[type="checkbox"],
