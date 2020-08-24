@@ -22,11 +22,7 @@ const Skills = () => {
     <div className="project-page">
       <div className="container">
         <h1>Skills</h1>
-        <p>
-          <blockquote>
-            “First, solve the problem. Then, write the code.” – John Johnson
-          </blockquote>
-        </p>
+        <p>“First, solve the problem. Then, write the code.” – John Johnson</p>
         <div id="svg">
           <div className="single-svg">
             <Node />

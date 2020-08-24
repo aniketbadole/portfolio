@@ -212,9 +212,7 @@ fieldset {
   margin: 0;
   border: 0;
 
-  & + & {
-    margin-top: 24px;
-  }
+  margin-top: 24px;
 }
 
 label {
@@ -244,4 +242,17 @@ input[type="radio"] {
 
 textarea {
   resize: vertical;
+}
+
+.scroll-button {
+  position: "fixed";
+  bottom: 50;
+  right: 30;
+  cursor: "pointer";
+  color: #ff5722;
+  font-size: 2em;
+  transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
 }
