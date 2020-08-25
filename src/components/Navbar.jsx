@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import MainPage from "./MainPage";
 const Navbar = () => {
   return (
