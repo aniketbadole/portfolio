@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { Link } from "@reach/router";
+import { Link, animateScroll as scroll } from "react-scroll";
 import MainPage from "./MainPage";
 const Navbar = () => {
   return (
@@ -10,25 +10,56 @@ const Navbar = () => {
       </a>
 
       <ul>
-        <li>
+        {/* <li>
           <Link to="/about" className="about">
             <span className="aa">About me</span>
           </Link>
-        </li>
+        </li> */}
         <li>
-          <a href="http://aniketbadole.com">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+          >
+            Projects
+          </Link>
+
+          {/* <a href="http://aniketbadole.com">
             <span className="aa">Projects</span>
-          </a>
+          </a> */}
         </li>
         <li>
-          <a href="http://aniketbadole.com">
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+          >
+            Skills
+          </Link>
+          {/* <a href="http://aniketbadole.com">
             <span className="aa">GitHub</span>
-          </a>
+          </a> */}
         </li>
         <li>
-          <a href="http://aniketbadole.com">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+          >
+            Contact
+          </Link>
+          {/* <a href="http://aniketbadole.com">
             <span className="aa">Contact</span>
-          </a>
+          </a> */}
         </li>
       </ul>
       <MainPage />

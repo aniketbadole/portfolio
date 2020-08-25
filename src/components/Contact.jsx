@@ -30,7 +30,7 @@ class Contact extends React.Component {
     const { name, email, message } = this.state;
 
     return (
-      <div className="project-page">
+      <div className="project-page" id="contact">
         <div className="container">
           <h1>Contact</h1>
           <p>Have a project in mind? Leave me a message!</p>

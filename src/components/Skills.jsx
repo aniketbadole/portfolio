@@ -19,7 +19,7 @@ import { ReactComponent as Wordpress } from "../assets/svg/wordpress.svg";
 
 const Skills = () => {
   return (
-    <div className="project-page">
+    <div className="project-page" id="skills">
       <div className="container">
         <h1>Skills</h1>
         <p>“First, solve the problem. Then, write the code.” – John Johnson</p>

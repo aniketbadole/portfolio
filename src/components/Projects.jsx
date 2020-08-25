@@ -82,7 +82,7 @@ class Projects extends Component {
   };
   render() {
     return (
-      <div className="project-page">
+      <div className="project-page" id="projects">
         <div className="container">
           <h1>Projects</h1>
           <p>
