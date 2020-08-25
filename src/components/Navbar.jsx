@@ -10,11 +10,6 @@ const Navbar = () => {
       </a>
 
       <ul>
-        {/* <li>
-          <Link to="/about" className="about">
-            <span className="aa">About me</span>
-          </Link>
-        </li> */}
         <li>
           <Link
             activeClass="active"
@@ -26,10 +21,6 @@ const Navbar = () => {
           >
             Projects
           </Link>
-
-          {/* <a href="http://aniketbadole.com">
-            <span className="aa">Projects</span>
-          </a> */}
         </li>
         <li>
           <Link
@@ -42,9 +33,6 @@ const Navbar = () => {
           >
             Skills
           </Link>
-          {/* <a href="http://aniketbadole.com">
-            <span className="aa">GitHub</span>
-          </a> */}
         </li>
         <li>
           <Link
@@ -57,9 +45,6 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          {/* <a href="http://aniketbadole.com">
-            <span className="aa">Contact</span>
-          </a> */}
         </li>
       </ul>
       <MainPage />
