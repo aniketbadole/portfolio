@@ -76,7 +76,7 @@ class Projects extends Component {
         image: thumb,
         tech: ["React", "Express.JS", "PostgreSQL"],
         id: 7,
-        type: ["graphic design", "all"],
+        type: ["graphic-design", "all"],
       },
     ],
   };

@@ -2,19 +2,19 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ScrollToTop from "react-scroll-up";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
     <div>
       <Navbar />
       {/* <MainPage /> */}
-      <Projects />
-      {/* <About />
-      <Projects /> */}
+      {/* <Projects /> */}
+      <Portfolio />
       <Skills />
       <Contact />
       <Footer />
