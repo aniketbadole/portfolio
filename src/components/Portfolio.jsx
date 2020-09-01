@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import thumb from "../assets/thumbnail.jpg";
+import "./portfolio.css";
 
 const portfolio = [
   {
@@ -15,7 +16,8 @@ const portfolio = [
   },
   {
     name: "Cabbed",
-    description: "Cabbed is a cross platform mobile app ",
+    description:
+      "Cabbed is a cross platform mobile app made for cab drivers to compete against ride hailing apps",
     url: "https://ncreddit.netlify.app",
     github: "https://github.com/aniketbadole/fe-nc-news",
     image: thumb,
@@ -46,7 +48,7 @@ const portfolio = [
   },
   {
     name: "Hangman",
-    description: "A hangman game based on React",
+    description: "A fun little hangman game made using React",
     url: "https://ncreddit.netlify.app",
     github: "https://github.com/aniketbadole/fe-nc-news",
     image: thumb,
@@ -65,7 +67,7 @@ const portfolio = [
     type: ["graphic-design", "all"],
   },
   {
-    name: "Kaitaki Adventures",
+    name: "Kaitiaki Adventures",
     description: "Graphic design for New Zealand based Kaitaki Adventures",
     url: "https://ncreddit.netlify.app",
     github: "https://github.com/aniketbadole",
@@ -96,12 +98,12 @@ const Portfolio = () => {
 
   return (
     <div className="project-page" id="projects">
-      <div className="container">
-        <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nobis
-          optio eligendi quibusdam odio
-        </p>
+      <h1>Projects</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nobis
+        optio eligendi quibusdam odio
+      </p>
+      <div className="main">
         <button active={filter === "all"} onClick={() => setFilter("all")}>
           All
         </button>
@@ -127,29 +129,31 @@ const Portfolio = () => {
           Graphic Design
         </button>
         {/* </div> */}
-        <div className="project-list">
+        {/* <div className="project-list"> */}
+        <ul class="cards">
           {projects.map((item) =>
             item.filtered === true ? (
-              <div className="card" key={item.name}>
-                {/* <div className="image"> */}
-                <img src={item.image} alt={item.name} />
-                {/* </div> */}
-                <div className="description">
-                  <h3>
-                    <b>{item.name}</b>
-                  </h3>
-                  <p>{item.description}</p>
-                  <div className="links">
-                    <a href={item.url}>Link</a>
-                    <a href={item.github}>Source</a>
+              <li class="cards_item">
+                <div className="card" key={item.name}>
+                  <div className="card_image">
+                    <img src={item.image} alt={item.name} />
+                  </div>
+                  <div className="card_content">
+                    <h2 className="card_title">{item.name}</h2>
+                    <p className="card_text">{item.description}</p>
+                    {/* <div className="links">
+                      <a href={item.url}>Link</a>
+                      <a href={item.github}>Source</a>
+                    </div> */}
+                    <button className="btn card_btn">Read More</button>
                   </div>
                 </div>
-              </div>
+              </li>
             ) : (
               ""
             )
           )}
-        </div>
+        </ul>
       </div>
     </div>
   );
