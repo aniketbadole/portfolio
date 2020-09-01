@@ -5,7 +5,7 @@ const portfolio = [
   {
     name: "NCReddit",
     description:
-      "NCReddit is a news aggregation web application build with React. It is a fully responsive app which provides a list of articles, comments and users.",
+      "NCReddit is a news aggregation web application build with React, Express and PostgreSQL.",
     url: "https://ncreddit.netlify.app",
     github: "https://github.com/aniketbadole/fe-nc-news",
     image: thumb,
@@ -28,7 +28,7 @@ const portfolio = [
     description:
       "A web project for a college. Includes a backend to fetch student data which is rendered on to the admin panel",
     url: "https://ncreddit.netlify.app",
-    github: "https://github.com/aniketbadole/fe-nc-news",
+    github: "https://github.com/aniketbadole/",
     image: thumb,
     tech: ["React", "Express.JS", "PostgreSQL"],
     id: 3,
@@ -38,7 +38,7 @@ const portfolio = [
     name: "Cyknowsure Technologies",
     description: "Web portal for a digital marketing agency.",
     url: "https://cyknowsure.com",
-    github: "https://github.com/aniketbadole/fe-nc-news",
+    github: "https://github.com/aniketbadole/",
     image: thumb,
     tech: ["React", "Express.JS", "PostgreSQL"],
     id: 4,
@@ -58,7 +58,7 @@ const portfolio = [
     name: "Hobbiton Tours",
     description: "Graphic Design for New Zealand based Hobbiton Tours",
     url: "https://ncreddit.netlify.app",
-    github: "https://github.com/aniketbadole/fe-nc-news",
+    github: "https://github.com/aniketbadole",
     image: thumb,
     tech: ["React", "Express.JS", "PostgreSQL"],
     id: 6,
@@ -68,7 +68,7 @@ const portfolio = [
     name: "Kaitaki Adventures",
     description: "Graphic design for New Zealand based Kaitaki Adventures",
     url: "https://ncreddit.netlify.app",
-    github: "https://github.com/aniketbadole/fe-nc-news",
+    github: "https://github.com/aniketbadole",
     image: thumb,
     tech: ["React", "Express.JS", "PostgreSQL"],
     id: 7,
@@ -131,9 +131,19 @@ const Portfolio = () => {
           {projects.map((item) =>
             item.filtered === true ? (
               <div className="card" key={item.name}>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <p>{item.type}</p>
+                {/* <div className="image"> */}
+                <img src={item.image} alt={item.name} />
+                {/* </div> */}
+                <div className="description">
+                  <h3>
+                    <b>{item.name}</b>
+                  </h3>
+                  <p>{item.description}</p>
+                  <div className="links">
+                    <a href={item.url}>Link</a>
+                    <a href={item.github}>Source</a>
+                  </div>
+                </div>
               </div>
             ) : (
               ""
